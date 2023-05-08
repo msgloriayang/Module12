@@ -1,26 +1,26 @@
-INSERT INTO department(name)
-    VALUES  ("Engineering"),
-            ("Finance"),
-            ("Legal"),
-            ("Sales");
+INSERT INTO department (dept_name)
+VALUES 
+('Parks and Recreation'),
+('Budget and Finance'),
+('City Planning');
 
-INSERT INTO roles(title, salary, department_id)
-    VALUES  ("Sales Lead", 80000, 4),
-            ("Salesperson", 60000, 4),
-            ("Lead Engineer", 120000, 1),
-            ("Account Manager", 75000, 2),
-            ("Accountant", 140000, 3),
-            ("Legal Team Lead", 200000, 3),
-            ("Lawyer", 180000, 3);
 
-INSERT INTO employees(first_name, last_name, role_id, manager_id)
-    VALUES  ("James", "Brown", 1, NULL),
-            ("Stevie", "Wonder", 2, 1),
-            ("Aretha", "Franklin", 2, 1),
-            ("Michael", "Jackson", 3, NULL),
-            ("Run", "DMC", 4, NULL),
-            ("Frank", "Ocean", 5, 5),
-            ("Amy", "Winehouse", 5, 5),
-            ("Busta", "Rhymes", 6, NULL),
-            ("Alicia", "Keys", 7, 8),
-            ("Mary J.", "Blige", 7, 8);
+INSERT INTO job (title, salary, department_id)
+VALUES 
+('Director', 75000, 1),
+('Deputy Director', 45000, 1),
+('Assistant', 18000, 1),
+('Head Auditor', 100000, 2),
+('Accountant', 80000, 2),
+('Engineer', 55000, 3),
+('Miniature Horse', 0, 1);
+
+INSERT INTO employee (first_name, last_name, job_id, manager_id)
+VALUES 
+('Ron', 'Swanson', 1, NULL),
+('Leslie', 'Knope', 2, 1),
+('April', 'Ludgate', 3, 2),
+('Chris', 'Traeger', 4, NULL),
+('Ben', 'Wyatt', 5, 4),
+('Mark', 'Brendanawicz', 6, NULL),
+('Lil', 'Sebastian', 7, NULL);
