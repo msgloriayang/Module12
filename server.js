@@ -74,8 +74,8 @@ const viewRoles = () => {
     })
 };
 
-const viewEmployee = () => {
-    db.query(`SELECT * FROM employees`, (err, results) => {
+const viewEmployees = () => {
+    db.query(`SELECT * FROM employee`, (err, results) => {
         err ? console.error(err) : console.table(results);
         init();
     })
