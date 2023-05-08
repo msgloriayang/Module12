@@ -1,0 +1,23 @@
+{
+  "name": "employee_tracker_db",
+  "version": "1.0.0",
+  "description": "This is an application that builds a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msgloriayang/Module12.git"
+  },
+  "author": "Gloria Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msgloriayang/Module12/issues"
+  },
+  "homepage": "https://github.com/msgloriayang/Module12#readme",
+  "dependencies": {
+    "inquirer": "^9.2.2",
+    "mysql": "^2.18.1"
+  }
+}
