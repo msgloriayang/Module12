@@ -29,7 +29,6 @@ const init = () => {
                     "Add a department",
                     "Add a role",
                     "Add an employee",
-                    "Update an employee role",
                     "I'm finished"
                 ]
             }
@@ -48,8 +47,6 @@ const init = () => {
                     break;
                 case "Add an employee": addEmployee();
                     break;
-                case "Update an employee role": updateEmployee();
-                    break;
                 case "I'm finished":
                     console.log("Thank you!");
                     process.exit();
@@ -60,7 +57,7 @@ const init = () => {
 init();
 
 const viewDept = () => {
-    // console.log("Working")
+    console.log("Working")
     db.query(`SELECT * FROM department`, (err, results) => {
         err ? console.error(err) : console.table(results);
         init();
@@ -162,12 +159,7 @@ const addEmployee = () => {
                 message: "What is the employee's last name?",
                 name: "lastName"
             },
-            // {
-            //     type: "list",
-            //     message: "What is the employee's role?",
-            //     name: "employeeRole",
-            //     choices: rollChoices
-            // }
+        
         ]).then(ans => {
             db.query(`INSERT INTO employees(first_name, last_name)
                     VALUES(?, ?)`, [ans.firstName, ans.lastName], (err, results) => {
