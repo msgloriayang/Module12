@@ -10,7 +10,7 @@ VALUES
 ('Account Manager', 45000, 1),
 ('Accountant', 18000, 1),
 ('Legal Team Lead', 100000, 2),
-('Lawyer', 80000, 2),
+('Lawyer', 80000, 2);
 
 INSERT INTO employee (first_name, last_name, job_id, manager_id)
 VALUES 
