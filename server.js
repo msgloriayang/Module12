@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql");
-require("console.table");
+// require("console.table");
 
 // Connect to database
 const db = mysql.createConnection(
@@ -74,7 +74,7 @@ const viewRoles = () => {
     })
 };
 
-const viewEmployees = () => {
+const viewEmployee = () => {
     db.query(`SELECT * FROM employees`, (err, results) => {
         err ? console.error(err) : console.table(results);
         init();
