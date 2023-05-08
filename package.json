@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/msgloriayang/Module12#readme",
   "dependencies": {
-    "inquirer": "^9.2.2",
-    "mysql": "^2.18.1"
+    "inquirer": "^8.2.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.0"
   }
 }
