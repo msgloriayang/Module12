@@ -3,7 +3,7 @@ SQL Challenge: Employee Tracker
 ## Description
 This is an application that builds a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 ## Video Submission
-Insert video clip here
+https://user-images.githubusercontent.com/118951775/236990193-a285fcab-0811-4b51-b164-9075e68f072b.mp4
 ## Table of Contents
 * [Features](#features)
 * [Applications](#applications)
